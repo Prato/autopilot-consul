@@ -16,7 +16,7 @@ RUN apk --no-cache \
 #    rm /tmp/consul.zip
 
 # The Consul web UI
-RUN curl -Lo /tmp/webui.zip https://releases.hashicorp.com/consul/${CONSUL_VERSION}/consul_${CONSUL_VERSION}_web_ui.zip && \
+RUN curl -Lo /tmp/webui.zip https://releases.hashicorp.com/consul/${CONSUL_VER}/consul_${CONSUL_VER}_web_ui.zip && \
     mkdir /ui && \
     cd /ui && \
     unzip /tmp/webui.zip && \
