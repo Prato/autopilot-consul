@@ -1,4 +1,4 @@
-FROM prato/autopilot-consul
+FROM prato/autopilot-base
 
 # Alpine packages
 RUN apk --no-cache \
