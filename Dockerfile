@@ -24,8 +24,9 @@ RUN curl -Lo /tmp/webui.zip https://releases.hashicorp.com/consul/${CONSUL_VERSI
 
 # Consul config
 COPY etc/consul.json etc/consul/
-# Vault
-https://releases.hashicorp.com/vault/0.6.0/vault_0.6.0_linux_amd64.zip
+# Vault https://www.vaultproject.io/downloads.html
+# sha256 283b4f591da8a4bf92067bf9ff5b70249f20705cc963bea96ecaf032911f27c2  vault_0.6.0_linux_amd64.zip
+# curl https://releases.hashicorp.com/vault/0.6.0/vault_0.6.0_linux_amd64.zip
 
 # copy bootstrap scripts
 COPY bin/* /usr/local/bin/
